@@ -21,7 +21,7 @@ export class ContactsPage implements OnInit {
 
   ngOnInit() {
 
-
+    console.log('Start Contact Page ')
 
   }
 

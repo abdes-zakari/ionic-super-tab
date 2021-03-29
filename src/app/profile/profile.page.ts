@@ -15,7 +15,7 @@ export class ProfilePage implements AfterViewInit {
   ngOnInit() {
   	console.log("ProfilePage loaded")
   }
-
+  ngAfterViewInit(){}
   navigateToTab(){
 
   	this.goToTab.emit(0)// par example navigate to first tab  index = 0

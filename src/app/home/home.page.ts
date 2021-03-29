@@ -33,8 +33,24 @@ export class HomePage implements AfterViewInit {
   ngAfterViewInit() {
     console.log('Super tabs', this.superTabs);
     // this.superTabs.selectTab(1);
+    console.log(this.superTabs.activeTabIndex)
   }
+  animateOnTabChange(e){
+    
+    console.log("animateOnTabChange")
+    console.log(e)
 
+    // example to animate tab with index=1
+    if(e.detail.index == 1){
+      document.getElementById('animate-me').classList.add("swirl-in-fwd");
+    }else{
+      document.getElementById('animate-me').classList.remove("swirl-in-fwd");
+    }
+
+  // u can do that for every tab like in above .....
+
+
+  }
   goToTab2(){
     this.superTabs.selectTab(1);
   }
